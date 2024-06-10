@@ -102,10 +102,16 @@ footer{
     cursor: pointer;
 }
 .card{
-    border: 2px solid red;
     padding: 0.5rem;
     width: 300px;
     font-family: Reddit Mono, sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.card:hover{
+    transform: scale(1.02);
 }
 .card img{
     width: 100%;
@@ -145,4 +151,67 @@ footer{
 
 .inp{
     width: 30%;
+}
+
+
+
+@media screen and (max-width:1200px){
+    .footer-container{
+        width: 60%;
+    }
+}
+@media screen and (max-width:1000px){
+
+    .footer-container{
+        width: 80%;
+    }
+
+    nav{
+        padding: 2rem 6rem;
+     
+    }
+ 
+}
+@media screen and (max-width:900px){
+
+    .footer-container{
+        width: 80%;
+    }
+    nav{
+        padding: 2rem;
+    }
+    ul{
+        display: none;
+    }
+    .inp{
+        width: 50%;
+    }
+    .icons {
+        justify-content: flex-start;
+    }
+
+}
+@media screen and (max-width:700px){
+ 
+    .card{
+        width: 260px;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    .footer-container{
+        width: 100%;
+        align-items: flex-start;
+    }
+
+
+}
+@media screen and (max-width:600px){
+ 
+    .card{
+        width: 100%;
+    }
+    .inp{
+        width: 100%;
+    }
+
 }

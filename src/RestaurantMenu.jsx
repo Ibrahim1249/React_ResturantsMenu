@@ -30,7 +30,7 @@ function RestaurantMenu() {
     <>
       <div className="form"> 
         <TextField id="outlined-basic" label="Search" variant="outlined" className='inp' value={searchInput} 
-         onChange={(e)=>{setSearchInput(e.currentTarget.value),filterData()} }/>
+         onChange={(e)=>{setSearchInput(e.currentTarget.value)} }/>
       </div>
       <div className="restaurant-container">
          {restaurant.map((item,idx)=>{
