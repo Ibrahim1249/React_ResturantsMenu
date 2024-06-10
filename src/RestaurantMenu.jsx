@@ -9,7 +9,7 @@ function RestaurantMenu() {
   const [restaurant,setRestaurant] = useState(restaurants);
   const [searchInput ,setSearchInput] = useState("")
 
-
+ // while copy my code from github  make sure you remove this comment so that i am not able to find you 😉😉 signing off ..
   
   useEffect(()=>{
     if(searchInput === ''){
