@@ -19,6 +19,7 @@ nav{
     position: sticky;
     top: 0;
     overflow: hidden;
+    z-index: 2;
 }
 .icons{
     display: flex;
@@ -87,6 +88,7 @@ footer{
 .footer-container .icons{
   /* margin: auto; */
   margin-bottom: 2rem;
+  
 }
 .about-para{
   margin-bottom: 1rem;
@@ -112,6 +114,7 @@ footer{
 }
 .card:hover{
     transform: scale(1.02);
+
 }
 .card img{
     width: 100%;
@@ -135,6 +138,7 @@ footer{
 }
 .city{
     padding-left: 0.5rem;
+    font-style: italic;
 }
 .restaurant-container{
     padding: 2rem;

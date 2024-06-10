@@ -1,7 +1,6 @@
 
 
 import React, { useEffect, useState } from 'react'
-import axios from 'axios';
 import Card from './Card';
 import TextField from '@mui/material/TextField';
 import { restaurants } from "./restaurant.js"
@@ -10,20 +9,23 @@ function RestaurantMenu() {
   const [restaurant,setRestaurant] = useState(restaurants);
   const [searchInput ,setSearchInput] = useState("")
 
-  
-  // useEffect(()=>{
-  //   setRestaurant(restaurant.filter((item,idx)=>{
-  //     let searchTerm = item.name.toLowerCase();
-  //     return searchTerm.includes(searchInput.toLowerCase());
-  //   }))
-  // },[searchInput])
 
-  function filterData(){
-        setRestaurant(restaurant.filter((item,idx)=>{
-      let searchTerm = item.name.toLowerCase();
-      return searchTerm.includes(searchInput.toLowerCase());
-    }))
-  }
+  
+  useEffect(()=>{
+    if(searchInput === ''){
+      setRestaurant(restaurants);
+    }else{
+      let filterData = restaurant.filter((item,idx)=>{
+        let searchTerm = item.name.toLowerCase();
+        return searchTerm.includes(searchInput.toLowerCase());
+      })
+      setRestaurant(filterData)
+    }
+   
+
+  },[searchInput])
+
+
 
 
   return (

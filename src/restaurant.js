@@ -60,7 +60,7 @@ export const restaurants = [
         cuisine: "American",
         location: "Seattle, WA",
         rating: 4.2,
-        image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38"
+        image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1998&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
         name: "Le Bistro",
@@ -123,7 +123,7 @@ export const restaurants = [
         cuisine: "French",
         location: "New York, NY",
         rating: 4.6,
-        image: "https://images.unsplash.com/photo-1525610553991-2bede1a236e2"
+        image: "https://images.unsplash.com/photo-1485962398705-ef6a13c41e8f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
         name: "BBQ Bliss",
